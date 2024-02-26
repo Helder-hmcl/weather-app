@@ -1,9 +1,6 @@
 package com.example.weather_app.di
 
-import android.app.Application
 import com.example.weather_app.data.remote.MyApi
-import com.example.weather_app.data.repository.MyRepositoryImpl
-import com.example.weather_app.domain.repository.MyRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
