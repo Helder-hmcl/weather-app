@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Card
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -26,7 +25,8 @@ fun MainScreenPortrait() {
     Column(
         Modifier
             .fillMaxSize()
-            .padding(10.dp), Arrangement.spacedBy(10.dp)
+            .padding(10.dp),
+        Arrangement.spacedBy(10.dp)
     ) {
         Text(text = "San Francisco", color = Color.White, fontSize = 34.sp)
         Row(verticalAlignment = Alignment.Bottom) {
@@ -49,7 +49,8 @@ fun MainScreenPortrait() {
         Row(
             Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 50.dp), Arrangement.SpaceEvenly
+                .padding(horizontal = 50.dp),
+            Arrangement.SpaceEvenly
         ) {
             Text(text = "1", color = Color.White)
             Text(text = "2", color = Color.White)
@@ -62,7 +63,8 @@ fun MainScreenPortrait() {
             Row(
                 Modifier
                     .padding(10.dp)
-                    .fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly
+                    .fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceEvenly
             ) {
                 Day("Mon", 28)
                 Day("Tue", 28)
@@ -73,6 +75,3 @@ fun MainScreenPortrait() {
         }
     }
 }
-
-
-

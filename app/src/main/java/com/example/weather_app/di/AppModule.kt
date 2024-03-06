@@ -1,8 +1,6 @@
 package com.example.weather_app.di
 
-import com.example.weather_app.ResponsiveUI
 import com.example.weather_app.data.remote.MyApi
-import com.example.weather_app.presentation.component.MainActivity
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

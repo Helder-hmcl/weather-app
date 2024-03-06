@@ -22,13 +22,14 @@ import androidx.compose.ui.unit.sp
 import com.example.weather_pp.R
 
 @Composable
-fun MainScreenLandscape () {
+fun MainScreenLandscape() {
     Column(
         Modifier
             .fillMaxSize()
-            .padding(10.dp), Arrangement.spacedBy(10.dp)
+            .padding(10.dp),
+        Arrangement.spacedBy(10.dp)
     ) {
-        Row (verticalAlignment = Alignment.CenterVertically) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
             Column {
                 Text(text = "San Francisco", color = Color.White, fontSize = 34.sp)
                 Row {
@@ -49,7 +50,8 @@ fun MainScreenLandscape () {
             Row(
                 Modifier
                     .fillMaxWidth()
-                    .padding(horizontal = 50.dp), Arrangement.SpaceEvenly
+                    .padding(horizontal = 50.dp),
+                Arrangement.SpaceEvenly
             ) {
                 Text(text = "1", color = Color.White)
                 Text(text = "2", color = Color.White)
@@ -64,7 +66,9 @@ fun MainScreenLandscape () {
             Row(
                 Modifier
                     .padding(10.dp)
-                    .fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly
+                    .fillMaxWidth(),
+                horizontalArrangement =
+                Arrangement.SpaceEvenly
             ) {
                 Day("Mon", 28)
                 Day("Tue", 28)
