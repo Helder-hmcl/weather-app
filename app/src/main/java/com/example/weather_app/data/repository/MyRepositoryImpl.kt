@@ -11,12 +11,8 @@ class MyRepositoryImpl @Inject constructor(
     private val appContext: Application
 ) : MyRepository {
 
-    init {
-        val appName = appContext.getString(R.string.app_name)
-        println("Hello from the app context: $appName")
-    }
-
     override suspend fun doNetworkCall() {
-        println("I am doing a network call")
+        val model = api.doNetworkCall()
+        println("I am doing a network call and this is the model: $model")
     }
 }
